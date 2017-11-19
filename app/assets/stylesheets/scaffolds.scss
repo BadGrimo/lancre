@@ -1,7 +1,7 @@
 body {
   color: #cbcbcb;
-  font-family: "MenloRegular";
-  line-height: 1.5;
+  font-family: monospace;
+  line-height: 2;
   // background-size: cover;
   margin: auto;
 }
@@ -10,8 +10,6 @@ body {
 .nav {
   background-color: #3a211c;
   box-shadow: 0 0 10px rgba(6,9,16,0.8);
-  padding-top: 5px;
-  padding-bottom: 5px;
   text-align: right;
   position: fixed;
   width: 100%;
@@ -21,8 +19,6 @@ body {
 }
 
 .pagetitle {
-  padding-top: 5px;
-  padding-bottom: 5px;
   position: fixed;
   text-align: center;
   width: 100%;
