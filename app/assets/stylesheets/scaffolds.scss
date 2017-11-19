@@ -1,0 +1,30 @@
+body {
+  color: #cbcbcb;
+  font-family: "MenloRegular";
+  line-height: 1.5;
+  // background-size: cover;
+  margin: auto;
+}
+
+
+.nav {
+  background-color: #3a211c;
+  box-shadow: 0 0 10px rgba(6,9,16,0.8);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  a {
+    color: #797f8b;
+  }
+}
+
+.pagetitle {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
