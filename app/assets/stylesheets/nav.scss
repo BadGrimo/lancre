@@ -1,5 +1,6 @@
-$bgcolor: #060910;
-$activecolor: lighten($bgcolor, 10%);
+$bgcolor: #141819;
+$activecolor: #262835;//lighten($bgcolor, 10%);
+$graycolor: #797f8b;
 $darkgraycolor: #cbcbcb;
 
 #nav {
@@ -53,7 +54,7 @@ $darkgraycolor: #cbcbcb;
         text-align: left;
     }
     
-    .dropdown-content a:hover {background-color: #f1f1f1}
+    .dropdown-content a:hover {background-color: $graycolor}
     
     .dropdown:hover .dropdown-content {
         display: block;
