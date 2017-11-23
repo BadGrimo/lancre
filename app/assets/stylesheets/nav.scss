@@ -2,7 +2,7 @@ $bgcolor: #060910;
 $activecolor: lighten($bgcolor, 10%);
 $darkgraycolor: #cbcbcb;
 
-.nav {
+#nav {
     ul {
         position: fixed;
         overflow:visible;
@@ -12,7 +12,7 @@ $darkgraycolor: #cbcbcb;
         margin: 0;
         padding: 0;
         background-color: $bgcolor;
-        z-index: 1;
+        z-index: 3;
     }
     
     li {
@@ -23,10 +23,11 @@ $darkgraycolor: #cbcbcb;
     }
     
     li a, .dropbtn {
-        display: inline-block;
+        // min-height: 30px;
+        display: block;
         color:$darkgraycolor;
         text-align: center;
-        padding: 14px 16px;
+        padding: 10px 15px;
         text-decoration: none;
     }
     
@@ -38,14 +39,14 @@ $darkgraycolor: #cbcbcb;
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: &darkgraycolor;
+        background-color: $darkgraycolor;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
     
     .dropdown-content a {
-        color: black;
+        color: $bgcolor;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
