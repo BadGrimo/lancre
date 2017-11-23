@@ -12,7 +12,7 @@ $darkgraycolor: #cbcbcb;
         margin: 0;
         padding: 0;
         background-color: $bgcolor;
-        z-index: 3;
+        z-index: 1;
     }
     
     li {
@@ -24,7 +24,7 @@ $darkgraycolor: #cbcbcb;
     
     li a, .dropbtn {
         display: inline-block;
-        color: white;
+        color:$darkgraycolor;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
