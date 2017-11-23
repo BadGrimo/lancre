@@ -1,12 +1,18 @@
-<nav class='nav'>
-  <% if user_signed_in? %>
-    <strong><%= current_user.username %></strong>
-    <!-- <span class="glyphicon glyphicon-user"></span> -->
-    <%= link_to "Edit", edit_user_registration_path %> |
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <!-- <span class="glyphicon glyphicon-log-out"></span> -->
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path  %> |
-    <%= link_to "Login", new_user_session_path %>
-  <% end %>
-</nav>
+<div class='nav'>
+  <ul>
+    <% if user_signed_in? %>
+      <li class="dropdown">    
+        <a href="javascript:void(0)" class="dropbtn"><%= current_user.username %></a>
+        <div class="dropdown-content">
+          <%= link_to "Edit profile", edit_user_registration_path %> 
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        </div>
+      </li>
+      <li><a href="#">abracadabra</a></li>
+      <li><a href="#">kikimora</a></li>      
+    <% else %>
+      <li><%= link_to "Sign up", new_user_registration_path  %></li>
+      <li><%= link_to "Login", new_user_session_path %></li>
+    <% end %>
+  </ul>
+</div>

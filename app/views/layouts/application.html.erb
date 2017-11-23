@@ -9,12 +9,17 @@
   </head>
 
   <body>
-    <%= render 'layouts/nav' %>
+    <dev class="container">
+      <%= render 'layouts/nav' %>
+      
+      <div class="content">
+        <% if notice %>
+          <p id="notice"><%= notice %></p>
+        <% end %>
 
-    <% if notice %>
-      <p id="notice"><%= notice %></p>
-    <% end %>
-
-    <%= yield %>
+        <%= yield %>
+      </div>
+      
+    </div>
   </body>
 </html>
