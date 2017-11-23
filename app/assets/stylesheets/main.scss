@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css');
+
+html, body, .main {
+    font-family: 'Jura', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    flex: auto ;
+}
+
+html {
+    min-height: 100%;
+}
+
+.container{
+    display: -webkit-box; /* iOS 6-, Safari 3.1-6 */
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex; /* Chrome */
+    display: flex; /* Opera 12.1, Firefox 20+ */
+    width: 100%;
+}
+
+#navbar, #content {
+}
+
+#navbar {
+    flex: 0 0 200px;
+}
+
+#content {
+    background-color: #797f8b;
+    color: #262835;
+    flex: 1 1 360px;
+    min-width: 200px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .content { flex: 1 1 100%; }
+    .sidebar { flex: 1 1 250px; }
+}
+// @media (min-width: 800px) {
+//     .sidebar.left  { order: 3; }
+//     .content       { order: 4; }
+//     .sidebar.right { order: 5; }
+// }
